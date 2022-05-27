@@ -1,0 +1,136 @@
+@import url(./defaults.css);
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-blue: hsl(233, 89%, 64%);
+    --dark-gray-blue: hsl(210, 10%, 33%);
+    --gray-blue: hsl(201, 11%, 66%);
+}
+
+body {
+    text-align: center;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+button {
+    padding: .75rem;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+
+h1,
+h3 {
+    font-weight: 600;
+    color: var(--dark-gray-blue);
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1.125rem;
+    padding-bottom: 2rem;
+    opacity: .5;
+    line-height: 1.5;
+}
+
+.main {
+    padding: 0 1.5rem;
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.head {
+    margin-bottom: 5rem;
+}
+
+.head>img {
+    padding: 6rem;
+    margin: 0 auto;
+}
+
+.ios {
+    background-color: var(--strong-cyan);
+    box-shadow: 0px 2px 0px 0px var(--gray-blue);
+}
+
+.mac {
+    background-color: var(--light-blue);
+    box-shadow: 0px 2px 0px 0px var(--dark-blue);
+}
+
+.download-buttons {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.feature {
+    margin-bottom: 5rem;
+}
+
+
+.feature .texts {
+    padding-top: 5rem;
+}
+
+.feature h3 {
+    padding-bottom: 1rem;
+}
+
+.charges {
+    display: grid;
+    gap: 2rem;
+}
+
+
+.charges img {
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10rem;
+}
+
+.sponsors>* {
+    width: 10.5rem;
+}
+
+.cta {
+    padding-bottom: 10rem;
+}
+
+.footer {
+    display: grid;
+    gap: 3rem;
+}
+
+.footer>img:first-child {
+    width: 5rem;
+    margin: 0 auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 3rem;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 375px) {
+    .main {
+        background-image: url('../images/bg-header-desktop.png');
+    }
+}
