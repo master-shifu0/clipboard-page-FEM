@@ -15,9 +15,8 @@
 				font-size: 11px;
 				text-align: center;
 			}
-
 			.attribution a {
-				color: hsl(228, 45%, 44%);
+				color: #000000;
 			}
 		</style>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,7 +30,7 @@
 	</head>
 
 	<body>
-		<main class="main">
+		<main role="main" class="main">
 			<section class="head">
 				<img src="images/logo.svg" alt="" />
 				<h1>A history of everything you copy</h1>
@@ -46,14 +45,18 @@
 			</section>
 			<section class="features">
 				<div class="feature keep-track">
-					<h3>Keep track of your snippets</h3>
-					<p>
-						Clipboard instantly stores any item you copy in the cloud, meaning you can access your
-						snippets immediately on all your devices. Our Mac and iOS apps will help you organize
-						everything.
-					</p>
+					<div class="keep-track-head">
+						<h3>Keep track of your snippets</h3>
+						<p>
+							Clipboard instantly stores any item you copy in the cloud, meaning you can access your
+							snippets immediately on all your devices. Our Mac and iOS apps will help you organize
+							everything.
+						</p>
+					</div>
 					<div class="keep-track-text">
-						<img class="computer" src="images/image-computer.png" alt="" />
+						<div class="computer">
+							<img src="images/image-computer.png" alt="" />
+						</div>
 						<div class="texts">
 							<h3>Quick Search</h3>
 							<p>
@@ -80,6 +83,7 @@
 				<div class="feature supercharge">
 					<h3>Supercharge your workflow</h3>
 					<p>We’ve got the tools to boost your productivity.</p>
+
 					<div class="charges">
 						<div>
 							<img src="images/icon-blacklist.svg" alt="" />
@@ -120,29 +124,32 @@
 					<button class="mac">Download for Mac</button>
 				</div>
 			</section>
+			<section class="footer">
+				<img class="logo" src="images/logo.svg" alt="" />
+				<div class="links">
+					<p>FAQs</p>
+					<p>Contact Us</p>
+					<p>Privacy Policy</p>
+					<p>Press Kit</p>
+					<p>Install Guide</p>
+				</div>
+				<div class="social-icons">
+					<img src="images/icon-facebook.svg" alt="" />
+					<img src="images/icon-twitter.svg" alt="" />
+					<img src="images/icon-instagram.svg" alt="" />
+				</div>
+			</section>
+			<footer>
+				<p class="attribution">
+					Challenge by
+					<a
+						aria-label="Go to frontendmentor website"
+						href="https://www.frontendmentor.io?ref=challenge"
+						target="_blank"
+						>Frontend Mentor</a
+					>. Coded by <a aria-label="Go to mastershiffu-0's website" href="#">mastershiffu-0</a>.
+				</p>
+			</footer>
 		</main>
-		<section class="footer">
-			<img src="images/logo.svg" alt="" />
-			<div>
-				<p>FAQs</p>
-				<p>Contact Us</p>
-				<p>Privacy Policy</p>
-				<p>Press Kit</p>
-				<p>Install Guide</p>
-			</div>
-			<div class="social-icons">
-				<img src="images/icon-facebook.svg" alt="" />
-				<img src="images/icon-twitter.svg" alt="" />
-				<img src="images/icon-instagram.svg" alt="" />
-			</div>
-		</section>
-
-		<footer>
-			<p class="attribution">
-				Challenge by
-				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-				Coded by <a href="#">Your Name Here</a>.
-			</p>
-		</footer>
 	</body>
 </html>
